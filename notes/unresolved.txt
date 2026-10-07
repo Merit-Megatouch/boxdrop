@@ -2,13 +2,6 @@
 # megatouch-host loads the game with RTLD_NOW, so each of these must be defined
 # (usually in src/host/loader_services.cpp) before the game will start.
 # symbol | needed by
-IsScreenTouched() | boxdrop.so
-MyMeritManager::Instance() | boxdrop.so
 MyMeritManager::IsEnabled() | boxdrop.so
 USBIO::FoundUSB() | boxdrop.so
-GameClass::GameClass() | boxdrop.so
-GameClass::~GameClass() | boxdrop.so
-MyMeritManager::PlayerLoaded() const | boxdrop.so
-MyMeritManager::Name() const | boxdrop.so
-typeinfo for GameClass | boxdrop.so
 ustrzcpy | boxdrop.so
