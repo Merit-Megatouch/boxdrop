@@ -1,0 +1,82 @@
+# Symbols no library, runtime or megatouch-host provides (2026-10-07)
+# megatouch-host loads the game with RTLD_NOW, so each of these must be defined
+# (usually in src/host/loader_services.cpp) before the game will start.
+# symbol | needed by
+GetTouchCoord(int*, int*, int*) | boxdrop.so
+GetHelpFileName(char (&) [255], char const*, Locale::Languages, char const*) | boxdrop.so
+IsScreenTouched() | boxdrop.so
+TextSystem::LoadTranslations(xml_gameinfo::GameIds) | boxdrop.so
+WorldClass::FrameNumber(Bitmap*) | boxdrop.so
+WorldClass::WaitOnFrame(unsigned long, bool) | boxdrop.so
+WorldClass::PlayDeltaAnim(char*, int, int, unsigned long, unsigned long, char*, unsigned short, unsigned char, bool) | boxdrop.so
+WorldClass::CopyCompBitmap(Bitmap*, int, int, int, int, int, int, int, int, int, int, bool) | boxdrop.so
+WorldClass::LoadBmp(char const*, int, float, int, int, bool, bool, Bitmap*) | boxdrop.so
+WorldClass::SetBack(char const*, int) | boxdrop.so
+WorldClass::SetBack(short) | boxdrop.so
+WorldClass::ShowAll() | boxdrop.so
+WorldClass::GetFrame(Bitmap*, int) | boxdrop.so
+WorldClass::DeleteBmp(Bitmap*, unsigned char) | boxdrop.so
+WorldClass::NextFrame(unsigned char, unsigned char, bool, bool, bool, bool) | boxdrop.so
+WorldClass::PlayMovie(int, unsigned long, void (*)(unsigned char), unsigned char, bool, bool, bool, bool) | boxdrop.so
+WorldClass::WorldClass() | boxdrop.so
+system_info::Get_Motherboard_Type() | boxdrop.so
+MyMeritManager::Instance() | boxdrop.so
+MyMeritManager::IsEnabled() | boxdrop.so
+List::RemoveFrom(Group*) | boxdrop.so
+List::Push(Group*) | boxdrop.so
+List::Clear(unsigned char) | boxdrop.so
+List::Advance(int) | boxdrop.so
+List::IsEmpty() | boxdrop.so
+List::List(List*) | boxdrop.so
+List::~List() | boxdrop.so
+Group::Signal(Group::SpriteSignalType) | boxdrop.so
+Group::Signal(SpriteSignal*) | boxdrop.so
+Group::Message(Group::SpriteSignalType) | boxdrop.so
+Group::Message(SpriteSignal*) | boxdrop.so
+USBIO::FoundUSB() | boxdrop.so
+Bitmap::DeCompress() | boxdrop.so
+Bitmap::DeCompress32() | boxdrop.so
+Bitmap::Compress(bool, int, unsigned short*) | boxdrop.so
+EventO::GetType() | boxdrop.so
+EventO::EventO() | boxdrop.so
+EventO::~EventO() | boxdrop.so
+Sprite::DoNextFrame() | boxdrop.so
+Sprite::AssignString(String*, unsigned long) | boxdrop.so
+Sprite::ClicksEnabled | boxdrop.so
+Sprite::ChangeClipping(int, int, int, int, int, int, int, int, unsigned long, unsigned long) | boxdrop.so
+Sprite::DeleteAfterLast(unsigned long) | boxdrop.so
+Sprite::CreateTextDropShadow(float, float, unsigned long, int, int, int) | boxdrop.so
+Sprite::RunDiskAnimThenDelete(char const*, unsigned long, float, unsigned long, bool) | boxdrop.so
+Sprite::Move(int, int, int, int, int, int, unsigned long, unsigned long, unsigned char) | boxdrop.so
+Sprite::Reset() | boxdrop.so
+Sprite::DoDraw() | boxdrop.so
+Sprite::Enable(unsigned long) | boxdrop.so
+Sprite::FadeIn(unsigned long, unsigned long, int, int) | boxdrop.so
+Sprite::SetBmp(Bitmap*, unsigned long) | boxdrop.so
+Sprite::Signal(Group::SpriteSignalType) | boxdrop.so
+Sprite::Signal(SpriteSignal*) | boxdrop.so
+Sprite::Disable(unsigned long, bool) | boxdrop.so
+Sprite::FadeOut(unsigned long, unsigned long, int, int) | boxdrop.so
+Sprite::Message(Group::SpriteSignalType) | boxdrop.so
+Sprite::Message(SpriteSignal*) | boxdrop.so
+Sprite::RunAnim(Bitmap*, int, int, int, unsigned long, float, unsigned long, int) | boxdrop.so
+Sprite::SetCord(float, float, float, unsigned long) | boxdrop.so
+Sprite::SetSize(int, int) | boxdrop.so
+Sprite::SetAlpha(int, unsigned long) | boxdrop.so
+Sprite::DoCommand(int) | boxdrop.so
+Sprite::PlaySound(char*, int, unsigned long) | boxdrop.so
+Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | boxdrop.so
+Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | boxdrop.so
+Sprite::~Sprite() | boxdrop.so
+String::String(char const*, int, char const*, int, signed char, int, int, int, unsigned char, unsigned char, unsigned short) | boxdrop.so
+GameClass::GameClass() | boxdrop.so
+GameClass::~GameClass() | boxdrop.so
+MyMeritManager::PlayerLoaded() const | boxdrop.so
+MyMeritManager::Name() const | boxdrop.so
+typeinfo for EventO | boxdrop.so
+typeinfo for Sprite | boxdrop.so
+typeinfo for GameClass | boxdrop.so
+vtable for DOSLinuxWorld | boxdrop.so
+screen | boxdrop.so
+show_mouse | boxdrop.so
+ustrzcpy | boxdrop.so
