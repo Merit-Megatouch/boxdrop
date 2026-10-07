@@ -4,4 +4,3 @@
 # symbol | needed by
 MyMeritManager::IsEnabled() | boxdrop.so
 USBIO::FoundUSB() | boxdrop.so
-ustrzcpy | boxdrop.so
